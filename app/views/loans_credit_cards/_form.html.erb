@@ -1,0 +1,30 @@
+
+<%= form_for(@loans_credit_card) do |f| %>
+  <% if @loans_credit_card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@loans_credit_card.errors.count, "error") %> prohibited this loans_credit_card from being saved:</h2>
+
+      <ul>
+      <% @loans_credit_card.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :account_Type %><br />
+    <%= f.text_field :account_Type %>
+  </div>
+  <div class="field">
+    <%= f.label :account_Number %><br />
+    <%= f.number_field :account_Number %>
+  </div>
+  <div class="field">
+    <%= f.label :institution_Information %><br />
+    <%= f.text_field :institution_Information %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

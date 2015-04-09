@@ -1,0 +1,38 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  </nav>
+<h1>Listing medical_histories</h1>
+
+<table>
+ <!-- <tr>
+    <th>Date</th>
+    <th>Updater</th>
+    <th>Diagnosis procedure</th>
+    <th>Date of onset</th>
+    <th>Physician</th>
+    <th>Comments</th>
+    <th>Documents</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>-->
+
+<% @medical_histories.each do |medical_history| %>
+  <tr>
+    <td><%= medical_history.date %></td>
+    <td><%= medical_history.updater %></td>
+    <td><%= medical_history.diagnosis_procedure %></td>
+    <td><%= medical_history.date_Of_Onset %></td>
+    <td><%= medical_history.physician %></td>
+    <td><%= medical_history.comments %></td>
+    <td><%= medical_history.documents %></td>
+    <td><%= link_to 'Show', medical_history %></td>
+    <td><%= link_to 'Edit', edit_medical_history_path(medical_history) %></td>
+    <td><%= link_to 'Destroy', medical_history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Medical history', new_medical_history_path %>

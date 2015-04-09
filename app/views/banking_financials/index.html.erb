@@ -1,0 +1,43 @@
+<div id="big_wrapper">
+		<header id="top_header1">
+		<h1> Banking Financial</h1><%=image_tag "image(3).gif" %>
+</header>
+  </div>
+<nav id="top_menuf">
+<%=render :partial=>'shared/navigation'%>
+  <nav>
+<h1>Index Banking Financial</h1>
+
+<table>
+  <tr>
+    <th>Social security</th>
+    <th>Date of birth</th>
+    <th>Account type</th>
+    <th>Account no</th>
+    <th>Account holders</th>
+    <th>Beneficiary</th>
+    <th>Institution information</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @banking_financials.each do |banking_financial| %>
+  <tr>
+    <td><%= banking_financial.social_Security %></td>
+    <td><%= banking_financial.date_Of_Birth %></td>
+    <td><%= banking_financial.account_type %></td>
+    <td><%= banking_financial.account_No %></td>
+    <td><%= banking_financial.account_Holders %></td>
+    <td><%= banking_financial.beneficiary %></td>
+    <td><%= banking_financial.institution_Information %></td>
+    <td><%= link_to 'Show', banking_financial %></td>
+    <td><%= link_to 'Edit', edit_banking_financial_path(banking_financial) %></td>
+    <td><%= link_to 'Destroy', banking_financial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Banking financial', new_banking_financial_path %>

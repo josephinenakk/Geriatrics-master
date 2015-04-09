@@ -1,0 +1,13 @@
+<div id="big_wrapper">
+		<header id="top_header1">
+		<h1>Client </h1><%=image_tag "image(3).gif" %>
+</header>
+  </div>
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  </nav>
+<h1>New client</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', clients_path %>

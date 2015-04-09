@@ -1,0 +1,48 @@
+
+
+<%= form_for(@banking_financial) do |f| %>
+  <% if @banking_financial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@banking_financial.errors.count, "error") %> prohibited this banking_financial from being saved:</h2>
+
+      <ul>
+      <% @banking_financial.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :social_Security %><br />
+    <%= f.number_field :social_Security %>
+  </div>
+  <div class="field">
+    <%= f.label :date_Of_Birth %><br />
+    <%= f.datetime_select :date_Of_Birth %>
+  </div>
+  <div class="field">
+    <%= f.label :account_type %><br />
+    <%= f.text_field :account_type %>
+  </div>
+  <div class="field">
+    <%= f.label :account_No %><br />
+    <%= f.number_field :account_No %>
+  </div>
+  <div class="field">
+    <%= f.label :account_Holders %><br />
+    <%= f.text_field :account_Holders %>
+  </div>
+  <div class="field">
+    <%= f.label :beneficiary %><br />
+    <%= f.text_field :beneficiary %>
+  </div>
+  <div class="field">
+    <%= f.label :institution_Information %><br />
+    <%= f.text_area :institution_Information %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+           

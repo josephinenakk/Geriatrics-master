@@ -1,0 +1,12 @@
+<div id="big_wrapper">
+		<header id="top_header1">
+		<h1> Banking Financial</h1><%=image_tag "image(3).gif" %>
+</header>
+  </div>
+<nav id="top_menuf">
+<%=render :partial=>'shared/navigation'%>
+  <nav>
+    <h1>Edit Banking Financial</h1>
+    <%= render 'form' %>
+<%= link_to 'Show', @banking_financial %> |
+<%= link_to 'Back', banking_financials_path %>

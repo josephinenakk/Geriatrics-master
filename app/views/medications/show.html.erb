@@ -1,0 +1,53 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  </nav>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Prescription:</b>
+  <%= @medication.prescription %>
+</p>
+
+<p>
+  <b>Currently taking:</b>
+  <%= @medication.currently_Taking %>
+</p>
+
+<p>
+  <b>Name of medication:</b>
+  <%= @medication.name_Of_Medication %>
+</p>
+
+<p>
+  <b>Dosage:</b>
+  <%= @medication.dosage %>
+</p>
+
+<p>
+  <b>Frequency:</b>
+  <%= @medication.frequency %>
+</p>
+
+<p>
+  <b>Prescribing physician:</b>
+  <%= @medication.prescribing_Physician %>
+</p>
+
+<p>
+  <b>Special instructions:</b>
+  <%= @medication.special_Instructions %>
+</p>
+
+<p>
+  <b>Pharmacy:</b>
+  <%= @medication.pharmacy %>
+</p>
+
+<p>
+  <b>Medication photo:</b>
+  <%= @medication.medication_Photo %>
+</p>
+
+
+<%= link_to 'Edit', edit_medication_path(@medication) %> |
+<%= link_to 'Back', medications_path %>

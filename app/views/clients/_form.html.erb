@@ -1,0 +1,54 @@
+
+<%= form_for(@client) do |f| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% @client.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :firstname %><br />
+    <%=  f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%=  f.label :lastname %><br />
+    <%=  f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_no %><br />
+    <%=  f.number_field :phone_no %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_birth %><br />
+    <%=  f.text_field :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :blood_type %><br />
+    <%= f.text_field :blood_type %>
+  </div>
+  <div class="field">
+    <%= f.label :allergies_info %><br />
+    <%=  f.text_field :allergies_info %>
+  </div>
+  <div class="field">
+    <%= f.label :name_healthcare_proxy %><br />
+    <%=  f.text_field :name_healthcare_proxy %>
+  </div>
+  <div class="field">
+    <%= f.label :organization %><br />
+    <%=  f.text_field :organization %>
+  </div>
+  <div class="field">
+    <%= f.label :details_DNR %><br />
+    <%=  f.text_area :details_DNR %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

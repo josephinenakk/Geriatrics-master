@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  social_Security: 1
+  date_Of_Birth: 2014-10-21 13:02:10
+  account_type: MyString
+  account_No: 1
+  account_Holders: MyString
+  beneficiary: MyString
+  institution_Information: MyText
+
+two:
+  social_Security: 1
+  date_Of_Birth: 2014-10-21 13:02:10
+  account_type: MyString
+  account_No: 1
+  account_Holders: MyString
+  beneficiary: MyString
+  institution_Information: MyText

@@ -1,0 +1,42 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  </nav>
+<h1>Listing legal_doucuments</h1>
+
+<table>
+  <tr>
+   <!-- <th>Do not resuscitate</th>
+    <th>Healthcare directive</th>
+    <th>Power of attorney</th>
+    <th>Will</th>
+    <th>Trust</th>
+    <th>Wishes</th>
+    <th>Letter of authorization</th>
+    <th>Pension papers</th>
+    <th>Location of original</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>-->
+
+<% @legal_doucuments.each do |legal_document| %>
+  <tr>
+    <td><% legal_document.do_Not_Resuscitate %></td>
+    <td><% legal_document.healthcare_Directive %></td>
+    <td><% legal_document.power_of_Attorney %></td>
+    <td><% legal_document.will %></td>
+    <td><% legal_document.trust %></td>
+    <td><% legal_document.wishes %></td>
+    <td><% legal_document.letter_of_Authorization %></td>
+    <td><% legal_document.pension_Papers %></td>
+    <td><% legal_document.location_of_Original %></td>
+    <td><%= link_to 'Show', legal_document %></td>
+    <td><%= link_to 'Edit', edit_legal_doucument_path(legal_document) %></td>
+    <td><%= link_to 'Destroy', legal_document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Legal doucument', new_legal_doucument_path %>

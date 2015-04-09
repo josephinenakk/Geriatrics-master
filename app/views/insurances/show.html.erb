@@ -1,0 +1,43 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  <nav>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Account type:</b>
+  <%= @insurance.account_Type %>
+</p>
+
+<p>
+  <b>Account no:</b>
+  <%= @insurance.account_No %>
+</p>
+
+<p>
+  <b>Account holders:</b>
+  <%= @insurance.account_Holders %>
+</p>
+
+<p>
+  <b>Beneficiary:</b>
+  <%= @insurance.beneficiary %>
+</p>
+
+<p>
+  <b>Institution information:</b>
+  <%= @insurance.institution_Information %>
+</p>
+
+<p>
+  <b>Document:</b>
+  <%= @insurance.document %>
+</p>
+
+<p>
+  <b>Insurance card:</b>
+  <%= @insurance.insurance_Card %>
+</p>
+
+
+<%= link_to 'Edit', edit_insurance_path(@insurance) %> |
+<%= link_to 'Back', insurances_path %>

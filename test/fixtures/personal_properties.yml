@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  property_Nickname: MyString
+  address_Line1: MyString
+  address_Line2: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  notes: MyText
+  vehicles: MyString
+  year: 1
+  make: MyString
+  model: MyString
+  notes_Collectibles_Valuable: MyString
+  stem_Description: MyText
+  item_Location: MyString
+  notes: MyText
+
+two:
+  property_Nickname: MyString
+  address_Line1: MyString
+  address_Line2: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  notes: MyText
+  vehicles: MyString
+  year: 1
+  make: MyString
+  model: MyString
+  notes_Collectibles_Valuable: MyString
+  stem_Description: MyText
+  item_Location: MyString
+  notes: MyText

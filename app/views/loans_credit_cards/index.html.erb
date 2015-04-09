@@ -1,0 +1,30 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  </nav>
+<h1>Listing loans_credit_cards</h1>
+
+<table>
+  <tr>
+    <th>Account type</th>
+    <th>Account number</th>
+    <th>Institution information</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @loans_credit_cards.each do |loans_credit_card| %>
+  <tr>
+    <td><%= loans_credit_card.account_Type %></td>
+    <td><%= loans_credit_card.account_Number %></td>
+    <td><%= loans_credit_card.institution_Information %></td>
+    <td><%= link_to 'Show', loans_credit_card %></td>
+    <td><%= link_to 'Edit', edit_loans_credit_card_path(loans_credit_card) %></td>
+    <td><%= link_to 'Destroy', loans_credit_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Loans credit card', new_loans_credit_card_path %>

@@ -1,0 +1,58 @@
+<div id="big_wrapper">
+		<header id="top_header1">
+		<h1>Client </h1><%=image_tag "image(3).gif" %>
+</header>
+  </div>
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  </nav>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @client.firstname %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @client.lastname %>
+</p>
+
+<p>
+  <b>Phone no:</b>
+  <%= @client.phone_no %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @client.date_of_birth %>
+</p>
+
+<p>
+  <b>Blood type:</b>
+  <%= @client.blood_type %>
+</p>
+
+<p>
+  <b>Allergies info:</b>
+  <%= @client.allergies_info %>
+</p>
+
+<p>
+  <b>Name healthcare proxy:</b>
+  <%= @client.name_healthcare_proxy %>
+</p>
+
+<p>
+  <b>Organization:</b>
+  <%= @client.organization %>
+</p>
+
+<p>
+  <b>Details dnr:</b>
+  <%= @client.details_DNR %>
+</p>
+
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>

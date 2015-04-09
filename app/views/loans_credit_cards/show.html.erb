@@ -1,0 +1,23 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  </nav>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Account type:</b>
+  <%= @loans_credit_card.account_Type %>
+</p>
+
+<p>
+  <b>Account number:</b>
+  <%= @loans_credit_card.account_Number %>
+</p>
+
+<p>
+  <b>Institution information:</b>
+  <%= @loans_credit_card.institution_Information %>
+</p>
+
+
+<%= link_to 'Edit', edit_loans_credit_card_path(@loans_credit_card) %> |
+<%= link_to 'Back', loans_credit_cards_path %>

@@ -1,0 +1,47 @@
+
+<div id="big_wrapper">
+  <header id="top_header">
+    <%=image_tag "image(8).jpg"%>
+    <h1>Geriatricsconcern</h1>
+
+			</header>
+
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+</nav>
+<section id="main_section">
+<article><header>
+<hgroup>
+<h2>Medical</h2>
+</hgroup>
+</header>
+<p class="jose">The Medical section includes information specific to the Geriatric Client from both the geriatric client data points and healthcare provider data points,
+along with sections on medical history and medications.</P>
+<%=link_to "Medical", clients_path ,:alt=>'medical'%>
+  <header>
+<hgroup>
+<h2>Medical History:</h2>
+</hgroup>
+</header>
+<p class="tuna">The Medical History section provides information relative to an individual Geriatric Client’s medical history and background; date of occurrence, diagnosis,
+physician, and associated documents can be uploaded such as discharge paperwork, photos of x-rays, etc. Medical History can be input, updated, or deleted in
+ this section by any user who has administrative authority.</P>
+<%=link_to "Medical History",medical_histories_path,:alt=>'medical history'%>
+  <header>
+<h2>Medications:</h2>
+</header>
+<p name="finefine">The Medications section provides information relative to an individual Geriatric Client. Medication information can be input, updated, or deleted
+in this section by any user who has administrative authority. Medication information may be relative to prescription or over the counter medications
+and provides the user a location to upload a picture of the actual medication or bottle
+</P>
+<%=link_to "Medications",medications_path,:alt=>'medications information'%>
+</article>
+</section>
+<aside id="side_news">
+<%=render :partial=>'shared/aside'%>
+</aside>
+  <footer id="the_footer">
+	copyright by josephine
+	</footer>
+	</div>
+

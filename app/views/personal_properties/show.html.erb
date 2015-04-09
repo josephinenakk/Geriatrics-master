@@ -1,0 +1,83 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  <nav>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Property nickname:</b>
+  <%= @personal_property.property_Nickname %>
+</p>
+
+<p>
+  <b>Address line1:</b>
+  <%= @personal_property.address_Line1 %>
+</p>
+
+<p>
+  <b>Address line2:</b>
+  <%= @personal_property.address_Line2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @personal_property.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @personal_property.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @personal_property.zip %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @personal_property.notes %>
+</p>
+
+<p>
+  <b>Vehicles:</b>
+  <%= @personal_property.vehicles %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @personal_property.year %>
+</p>
+
+<p>
+  <b>Make:</b>
+  <%= @personal_property.make %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @personal_property.model %>
+</p>
+
+<p>
+  <b>Notes collectibles valuable:</b>
+  <%= @personal_property.notes_Collectibles_Valuable %>
+</p>
+
+<p>
+  <b>Stem description:</b>
+  <%= @personal_property.stem_Description %>
+</p>
+
+<p>
+  <b>Item location:</b>
+  <%= @personal_property.item_Location %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @personal_property.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_personal_property_path(@personal_property) %> |
+<%= link_to 'Back', personal_properties_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  account_Type: MyString
+  account_No: 1
+  account_Holders: MyString
+  beneficiary: MyString
+  institution_Information: MyText
+  document: MyText
+  insurance_Card: MyString
+
+two:
+  account_Type: MyString
+  account_No: 1
+  account_Holders: MyString
+  beneficiary: MyString
+  institution_Information: MyText
+  document: MyText
+  insurance_Card: MyString

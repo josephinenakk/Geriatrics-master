@@ -1,0 +1,58 @@
+
+<div id="big_wrapper">
+		<header id="top_header1">
+		    <h1>Geriatricsconcern</h1><%=image_tag "image(3).gif" %>
+        </header>
+    <nav id="top_menu">
+        <%=render :partial=>'shared/navigation'%>
+    </nav>
+<section id="main_section">
+        <article>
+    <header>
+        <h2>Banking & Financial:</h2>
+    </header>
+<p class="tuna">The Banking & Financials section contains information about financial accounts and the institutions to which they are tied. Account information
+can be input, updated, or deleted in this section by any user who has administrative authority.</P>
+<%=link_to"Fill the Banking & Financial",banking_financials_path,:alt=>'banking financials'%>
+  <header>
+        <h2>Loans & Credit Cards</h2>
+  </header>
+<p class="tuna">The Loans & Credit Cards section contains information about outstanding credit obligations. Account information can be
+input, updated, or deleted in this section by any user who has administrative authority.</P>
+<%=link_to "Fill the Loans & Credit Cards Details",loans_credit_cards_path,:alt=>'loans credit cards'%>
+    <header>
+        <h2>Insurance:</h2>
+    </header>
+
+<p name="finefine">The Insurance section contains information about all types of insurance including medical, life, home related, vehicle and umbrella as examples.
+ Account information can be input, updated, or deleted in this section by any user who has administrative authority. Images of medical insurance
+cards or declaration pages can be uploaded.</P>
+<%=link_to"Fill the Insurance Details",insurances_path,:alt=>'insurances'%>
+          <header>
+        <h2>Legal Docs:</h2>
+    </header>
+
+<p class="jose">The Legal Docs section provides a central location for the viewing and storing legal related documents as well as information on Attorney Providers.
+ Legal docs can be uploaded or deleted in this section by any user who has administrative authority.</p><br/>
+<p class="jose">Attorney Provider detailed information is accessible from the Legal Docs section of Geriatricsconcern.com and may be updated or maintained via a direct
+ link to the Attorney/Insurance Providers section.</p>
+ <%=link_to "Legal Docs",legal_doucuments_path,:alt=>'legal doucuments'%>
+
+    <header>
+        <h2>Personal Property:</h2>
+    </header>
+<p class="jose">The Personal Property section of contains information about personal property owned by the Geriatric Client in the form of dwellings, vehicles,
+ and valuables.</p>
+    <h3>Collectibles & Valuables</h3>
+    <%=link_to"Fill the Personal Property Details",personal_properties_path,:alt=>'personal properties'%>
+    </article>
+
+</section>
+<aside id="side_news">
+    <%=render :partial=> 'shared/aside'%>
+</aside>
+
+<footer id="the_footer">
+	copyright by josephine
+	</footer>
+	</div>

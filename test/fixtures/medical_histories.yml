@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2014-10-21 12:23:31
+  updater: MyText
+  diagnosis_procedure: MyText
+  date_Of_Onset: 2014-10-21 12:23:31
+  physician: MyString
+  comments: MyText
+  documents: MyText
+
+two:
+  date: 2014-10-21 12:23:31
+  updater: MyText
+  diagnosis_procedure: MyText
+  date_Of_Onset: 2014-10-21 12:23:31
+  physician: MyString
+  comments: MyText
+  documents: MyText

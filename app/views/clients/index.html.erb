@@ -1,0 +1,48 @@
+<div id="big_wrapper">
+		<header id="top_header1">
+		<h1>Client </h1><%=image_tag "image(2).gif" %>
+</header>
+  </div>
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  </nav>
+<h1>Listing clients</h1>
+
+<table>
+  <tr>
+   <!-- <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Phone no</th>
+    <th>Date of birth</th>
+    <th>Blood type</th>
+    <th>Allergies info</th>
+    <th>Name healthcare proxy</th>
+    <th>Organization</th>
+    <th>Details dnr</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>-->
+
+<% @clients.each do |client| %>
+  <tr>
+    <td><%  client.firstname %></td>
+    <td><%  client.lastname %></td>
+    <td><%  client.phone_no %></td>
+    <td><%  client.date_of_birth %></td>
+    <td><%  client.blood_type %></td>
+    <td><%  client.allergies_info %></td>
+    <td><%  client.name_healthcare_proxy %></td>
+    <td><%  client.organization %></td>
+    <td><%  client.details_DNR %></td>
+    <td><%= link_to 'Show', client %></td>
+    <td><%= link_to 'Edit', edit_client_path(client) %></td>
+    <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Client', new_client_path %>
+

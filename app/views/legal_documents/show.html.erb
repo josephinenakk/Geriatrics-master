@@ -1,0 +1,53 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  </nav>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Do not resuscitate:</b>
+  <%= @legal_document.do_Not_Resuscitate %>
+</p>
+
+<p>
+  <b>Healthcare directive:</b>
+  <%= @legal_document.healthcare_Directive %>
+</p>
+
+<p>
+  <b>Power of attorney:</b>
+  <%= @legal_document.power_of_Attorney %>
+</p>
+
+<p>
+  <b>Will:</b>
+  <%= @legal_document.will %>
+</p>
+
+<p>
+  <b>Trust:</b>
+  <%= @legal_document.trust %>
+</p>
+
+<p>
+  <b>Wishes:</b>
+  <%= @legal_document.wishes %>
+</p>
+
+<p>
+  <b>Letter of authorization:</b>
+  <%= @legal_document.letter_of_Authorization %>
+</p>
+
+<p>
+  <b>Pension papers:</b>
+  <%= @legal_document.pension_Papers %>
+</p>
+
+<p>
+  <b>Location of original:</b>
+  <%= @legal_document.location_of_Original %>
+</p>
+
+
+<%= link_to 'Edit', edit_legal_doucument_path(@legal_document) %> |
+<%= link_to 'Back', legal_doucuments_path %>

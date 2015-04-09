@@ -1,0 +1,2 @@
+module PersonalPropertiesHelper
+end

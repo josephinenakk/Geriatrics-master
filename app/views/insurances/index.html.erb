@@ -1,0 +1,38 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  <nav>
+<h1>Listing insurances</h1>
+
+<table>
+  <tr>
+    <th>Account type</th>
+    <th>Account no</th>
+    <th>Account holders</th>
+    <th>Beneficiary</th>
+    <th>Institution information</th>
+    <th>Document</th>
+    <th>Insurance card</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @insurances.each do |insurance| %>
+  <tr>
+    <td><%= insurance.account_Type %></td>
+    <td><%= insurance.account_No %></td>
+    <td><%= insurance.account_Holders %></td>
+    <td><%= insurance.beneficiary %></td>
+    <td><%= insurance.institution_Information %></td>
+    <td><%= insurance.document %></td>
+    <td><%= insurance.insurance_Card %></td>
+    <td><%= link_to 'Show', insurance %></td>
+    <td><%= link_to 'Edit', edit_insurance_path(insurance) %></td>
+    <td><%= link_to 'Destroy', insurance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Insurance', new_insurance_path %>

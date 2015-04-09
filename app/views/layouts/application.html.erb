@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+ <title>Geriatricsconcern</title>
+<%= stylesheet_link_tag "applications", :media => "all" %>
+ <%= stylesheet_link_tag "main1", :media => "all" %>
+<%= javascript_include_tag "applications" %>
+<%= csrf_meta_tags %>
+ <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+  <div style="width: 100px; margin: 0px auto;">
+    <%  if flash[:notice]%>
+    <p class="notice"><%= flash[:notice].html_safe %></p>
+    <%end%>
+    <%  if flash[:error]%>
+    <p class="error"><%= flash[:error].html_safe %></p>
+    <%end%>
+    <%  if flash[:alert]%>
+    <p class="alert"><%= flash[:alert].html_safe %></p>
+    <%end%>
+</div>
+  <div style="width: 950px; margin: 0px auto;">
+<%= yield %>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+<%= form_for(@medical_history) do |f| %>
+  <% if @medical_history.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@medical_history.errors.count, "error") %> prohibited this medical_history from being saved:</h2>
+
+      <ul>
+      <% @medical_history.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :updater %><br />
+    <%= f.text_area :updater %>
+  </div>
+  <div class="field">
+    <%= f.label :diagnosis_procedure %><br />
+    <%= f.text_area :diagnosis_procedure %>
+  </div>
+  <div class="field">
+    <%= f.label :date_Of_Onset %><br />
+    <%= f.datetime_select :date_Of_Onset %>
+  </div>
+  <div class="field">
+    <%= f.label :physician %><br />
+    <%= f.text_field :physician %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br />
+    <%= f.text_area :comments %>
+  </div>
+  <div class="field">
+    <%= f.label :documents %><br />
+    <%= f.text_area :documents %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

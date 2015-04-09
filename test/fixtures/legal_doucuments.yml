@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  do_Not_Resuscitate: MyString
+  healthcare_Directive: MyString
+  power_of_Attorney: MyString
+  will: MyText
+  trust: MyString
+  wishes: MyText
+  letter_of_Authorization: MyText
+  pension_Papers: MyText
+  location_of_Original: MyString
+
+two:
+  do_Not_Resuscitate: MyString
+  healthcare_Directive: MyString
+  power_of_Attorney: MyString
+  will: MyText
+  trust: MyString
+  wishes: MyText
+  letter_of_Authorization: MyText
+  pension_Papers: MyText
+  location_of_Original: MyString

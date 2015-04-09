@@ -1,0 +1,49 @@
+<div id="big_wrapper">
+		<header id="top_header1">
+		<h1> Banking Financial</h1><%=image_tag "image(3).gif" %>
+</header>
+  </div>
+<nav id="top_menuf">
+<%=render :partial=>'shared/navigation'%>
+  <nav>
+    <h1>Show Banking Financial</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Social security:</b>
+  <%= @banking_financial.social_Security %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @banking_financial.date_Of_Birth %>
+</p>
+
+<p>
+  <b>Account type:</b>
+  <%= @banking_financial.account_type %>
+</p>
+
+<p>
+  <b>Account no:</b>
+  <%= @banking_financial.account_No %>
+</p>
+
+<p>
+  <b>Account holders:</b>
+  <%= @banking_financial.account_Holders %>
+</p>
+
+<p>
+  <b>Beneficiary:</b>
+  <%= @banking_financial.beneficiary %>
+</p>
+
+<p>
+  <b>Institution information:</b>
+  <%= @banking_financial.institution_Information %>
+</p>
+
+
+<%= link_to 'Edit', edit_banking_financial_path(@banking_financial) %> |
+<%= link_to 'Back', banking_financials_path %>

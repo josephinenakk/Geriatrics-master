@@ -1,0 +1,9 @@
+<nav id="top_menu">
+<%=render :partial=>'shared/navigation'%>
+  <nav>
+<h1>Editing insurance</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @insurance %> |
+<%= link_to 'Back', insurances_path %>
