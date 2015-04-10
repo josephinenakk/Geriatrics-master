@@ -1,10 +1,10 @@
 <nav id="top_menu">
 <%=render :partial=>'shared/navigation'%>
-  <nav>
-<h1>Listing personal_properties</h1>
+  </nav>
+<h2>Listing Personal Properties</h2>
 
 <table>
-  <tr>
+  <!--<tr>
     <th>Property nickname</th>
     <th>Address line1</th>
     <th>Address line2</th>
@@ -23,25 +23,25 @@
     <th></th>
     <th></th>
     <th></th>
-  </tr>
+  </tr>-->
 
 <% @personal_properties.each do |personal_property| %>
   <tr>
-    <td><%= personal_property.property_Nickname %></td>
-    <td><%= personal_property.address_Line1 %></td>
-    <td><%= personal_property.address_Line2 %></td>
-    <td><%= personal_property.city %></td>
-    <td><%= personal_property.state %></td>
-    <td><%= personal_property.zip %></td>
-    <td><%= personal_property.notes %></td>
-    <td><%= personal_property.vehicles %></td>
-    <td><%= personal_property.year %></td>
-    <td><%= personal_property.make %></td>
-    <td><%= personal_property.model %></td>
-    <td><%= personal_property.notes_Collectibles_Valuable %></td>
-    <td><%= personal_property.stem_Description %></td>
-    <td><%= personal_property.item_Location %></td>
-    <td><%= personal_property.notes %></td>
+    <td><% personal_property.property_Nickname %></td>
+    <td><% personal_property.address_Line1 %></td>
+    <td><% personal_property.address_Line2 %></td>
+    <td><% personal_property.city %></td>
+    <td><% personal_property.state %></td>
+    <td><% personal_property.zip %></td>
+    <td><% personal_property.notes %></td>
+    <td><% personal_property.vehicles %></td>
+    <td><% personal_property.year %></td>
+    <td><% personal_property.make %></td>
+    <td><% personal_property.model %></td>
+    <td><% personal_property.notes_Collectibles_Valuable %></td>
+    <td><% personal_property.stem_Description %></td>
+    <td><% personal_property.item_Location %></td>
+    <td><% personal_property.notes %></td>
     <td><%= link_to 'Show', personal_property %></td>
     <td><%= link_to 'Edit', edit_personal_property_path(personal_property) %></td>
     <td><%= link_to 'Destroy', personal_property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -51,4 +51,5 @@
 
 <br />
 
-<%= link_to 'New Personal property', new_personal_property_path %>
+<%= link_to 'New Personal property', new_personal_property_path %></br>
+<%= link_to 'New Client', new_client_path %></br>
