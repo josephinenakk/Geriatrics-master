@@ -5,11 +5,11 @@
   </div>
 <nav id="top_menuf">
 <%=render :partial=>'shared/navigation'%>
-  </nav>
-<h2>Banking Financial</h2>
+  <nav>
+<h1>Index Banking Financial</h1>
 
 <table>
- <!-- <tr>
+  <tr>
     <th>Social security</th>
     <th>Date of birth</th>
     <th>Account type</th>
@@ -20,26 +20,24 @@
     <th></th>
     <th></th>
     <th></th>
-  </tr>-->
+  </tr>
 
 <% @banking_financials.each do |banking_financial| %>
   <tr>
-    <td><% banking_financial.social_Security %></td>
-    <td><% banking_financial.date_Of_Birth %></td>
-    <td><% banking_financial.account_type %></td>
-    <td><% banking_financial.account_No %></td>
-    <td><% banking_financial.account_Holders %></td>
-    <td><% banking_financial.beneficiary %></td>
-    <td><% banking_financial.institution_Information %></td>
-    <td><% link_to 'Show', banking_financial %></td>
-    <td><% link_to 'Edit', edit_banking_financial_path(banking_financial) %></td>
-    <td><% link_to 'Destroy', banking_financial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= banking_financial.social_Security %></td>
+    <td><%= banking_financial.date_Of_Birth %></td>
+    <td><%= banking_financial.account_type %></td>
+    <td><%= banking_financial.account_No %></td>
+    <td><%= banking_financial.account_Holders %></td>
+    <td><%= banking_financial.beneficiary %></td>
+    <td><%= banking_financial.institution_Information %></td>
+    <td><%= link_to 'Show', banking_financial %></td>
+    <td><%= link_to 'Edit', edit_banking_financial_path(banking_financial) %></td>
+    <td><%= link_to 'Destroy', banking_financial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<!--<#%= link_to 'New Banking financial', new_banking_financial_path%></br>-->
-<%= link_to 'Back  (new client)', clients_path %></br>
-
+<%= link_to 'New Banking financial', new_banking_financial_path %>

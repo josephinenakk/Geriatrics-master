@@ -238,10 +238,3 @@ list-style:none;
 padding:15px;
 font:bold 14px Tahoma;
 }
-#new_div1{
-    max-width: 200px;
-    max-height: 200px;
-    float: left;
-    -webkit-box-orient: vertical;
-    -webkit-box-flex: 1;
-}
