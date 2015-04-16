@@ -23,22 +23,91 @@ width:100%;
 #finefine{
 float:right;
 }
-#div1{
-max-width: 300px;
-height: 1000px;
-margin:20px 0px;
-float:left;
-border:3px solid black;
-padding:50px;
--webkit-box-orient: vertical;
--webkit-box-flex: 1;
+#div1 {
+    max-width: 300px;
+    height: 1000px;
+    margin: 20px 0px;
+    float: left;
+    border: 3px solid black;
+    padding: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
 }
-#big_wrapper{
-max-width: 1000px;
+#div3{
+    max-width: 700px;
+    background:SlateGray;
+    margin: 20px 20px;
+    float:right;
+    border:1px solid black;
+    padding:10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+#div4{
+    max-width: 800px;
+    background: LightCyan ;
+    margin: 20px 80px;
+    border:1px solid black;
+    padding:20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+#div4{
+    max-width: 800px;
+    background:LightBlue  ;
+    float: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+#div5 {
+    max-width: 800px;
+    background: Gainsboro;
+    margin: 20px 20px;
+    border: 1px solid black;
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+#div7{
+    max-width: 300px;
+    float:left;
+    background: LightCyan ;
+    margin: 20px 80px;
+    border:3px solid black;
+    padding:30px;
 
-margin:20px 10px;
--webkit-box-orient: vertical;
--webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+#div8{
+    max-width: 1000px;
+    background: palegoldenrod ;
+    margin: 20px 20px;
+    border:1px solid #94B270;
+    padding:20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+
+
+
+
+#big_wrapper {
+    max-width: 1000px;
+
+    margin: 20px 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+
+
+
+#top_header{
+    max-width: 1000px;
+    height:150px;
+    background: #66CCCC;
+    border:3px solid black;
+    padding:50px;
 }
 #top_header1{
 max-width: 1000px;
@@ -54,18 +123,18 @@ background:DarkSeaGreen;
 border:3px solid black;
 padding:50px;
 }
+#header2{
+    max-width: 1000px;
+    height:200px;
+    background:lightblue;
+    padding:50px;
 
-
-#top_header{
-max-width: 1000px;
-height:150px;
-background: #66CCCC;
-border:3px solid black;
-padding:50px;
 }
+
+
 #top_menu{
 border:1px solid blue;
-background:#DDA0DD;
+background:lightsteelblue;
 
 }
 #top_menu li{
@@ -74,6 +143,8 @@ list-style:none;
 padding:15px;
 font:bold 14px Tahoma;
 }
+
+
 #new_div{
 /*display:-wedkit-box;*/
 -webkit-box-orient:horizontal;
@@ -127,13 +198,7 @@ border-top:2px #00FFFF;
 border-bottom:2px #00FFFF;
 }
 /*style finatial_providers.html.erb*/
-#header2{
-max-width: 1000px;
-height:200px;
-background:lightpink;
-padding:50px;
 
-}
 #para{
     float:right;
 }
@@ -146,87 +211,34 @@ h2{
 font: bold 20px Tahoma;
 }
 #big1{
-max-width: 1000px;
-border:20px solid burlywood;
+max-width: 1200px;
+
 margin:20px 0px;
 -webkit-box-orient: vertical;
 -webkit-box-flex: 1;
 }
 #nav2{
-   width: 1000px;
-   background: LightGreen  ;
-   border:3px solid black;
+   width:900px;
+   background: cadetblue ;
+   border:1px solid black;
    
 -webkit-box-flex:1;
-margin:30px;
+margin:10px;
 padding:20px;
 }
-#div4{
-max-width: 800px;
- background:LightBlue  ;
-float: left;
 
--webkit-box-orient: vertical;
--webkit-box-flex: 1;
-}
-#div7{
-max-width: 300px;
- float:left;
-  background: LightCyan ;
-margin: 20px 80px;
-border:3px solid black;
-padding:30px;
 
--webkit-box-orient: vertical;
--webkit-box-flex: 1;
-}
-#div3{
-max-width: 700px;
-background:SlateGray;
-margin: 20px 80px;
-float:right;
-border:3px solid black;
-padding:30px;
--webkit-box-orient: vertical;
--webkit-box-flex: 1;
-}
-#div4{
-max-width: 800px;
- background: LightCyan ;
-margin: 20px 80px;
-border:3px solid black;
-padding:20px;
--webkit-box-orient: vertical;
--webkit-box-flex: 1;
-}
 
-#div5{
-max-width: 800px;
- background: Gainsboro;
-margin: 20px 80px;
-border:3px solid black;
-padding:20px;
--webkit-box-orient: vertical;
--webkit-box-flex: 1;
-}
 #nav7{
-   width: 800px;
-   background:CornflowerBlue ;
-   border:3px solid black;
+   width: 900px;
+   background:gainsboro ;
+    border:1px solid burlywood;
 
 -webkit-box-flex:1;
-margin:30px;
-padding:20px;
+margin:10px;
+padding:10px;
 }
-#div8{
-max-width: 800px;
- background: #E5D6CE ;
-margin: 20px 80px;
-border:3px solid black;
-padding:20px;
--webkit-box-orient: vertical;
--webkit-box-flex: 1;
-}
+
 #top_menuf{
 border:1px solid blue;
 background:#94B270;
