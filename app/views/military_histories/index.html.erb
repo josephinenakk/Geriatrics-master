@@ -1,0 +1,39 @@
+<h1>Listing military_histories</h1>
+
+<table>
+  <tr>
+    <th>Branch of service</th>
+    <th>Active or reserve</th>
+    <th>Years of service</th>
+    <th>Military contact name</th>
+    <th>Military contact phone</th>
+    <th>Pension qualified?</th>
+    <th>Pension or benefits phone</th>
+    <th> number</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @military_histories.each do |military_history| %>
+  <tr>
+    <td><%= military_history.branch_of_service %></td>
+    <td><%= military_history.active_or_reserve %></td>
+    <td><%= military_history.years_of_service %></td>
+    <td><%= military_history.military_contact_name %></td>
+    <td><%= military_history.military_contact_phone %></td>
+    <td><%= military_history.pension_qualified? %></td>
+    <td><%= military_history.pension_or_benefits_phone %></td>
+    <td><%= military_history._number %></td>
+    <td><%= military_history.notes %></td>
+    <td><%= link_to 'Show', military_history %></td>
+    <td><%= link_to 'Edit', edit_military_history_path(military_history) %></td>
+    <td><%= link_to 'Destroy', military_history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Military history', new_military_history_path %>

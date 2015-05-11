@@ -1,12 +1,9 @@
-<nav id="top_menu">
-<%=render :partial=>'shared/navigation'%>
-  </nav>
-<h2>Listing legal doucuments</h2>
+<h1>Listing legal_documents</h1>
 
 <table>
- <!-- <tr>
-    <th>Do not resuscitate</th>
-    <th>Healthcare directive</th>
+  <tr>
+    <th>Do ot resuscitate</th>
+    <th>Health care directive</th>
     <th>Power of attorney</th>
     <th>Will</th>
     <th>Trust</th>
@@ -17,21 +14,21 @@
     <th></th>
     <th></th>
     <th></th>
-  </tr>-->
+  </tr>
 
-<% @legal_doucuments.each do |legal_document| %>
+<% @legal_documents.each do |legal_document| %>
   <tr>
-    <td><% legal_document.do_Not_Resuscitate %></td>
-    <td><% legal_document.healthcare_Directive %></td>
-    <td><% legal_document.power_of_Attorney %></td>
-    <td><% legal_document.will %></td>
-    <td><% legal_document.trust %></td>
-    <td><% legal_document.wishes %></td>
-    <td><% legal_document.letter_of_Authorization %></td>
-    <td><% legal_document.pension_Papers %></td>
-    <td><% legal_document.location_of_Original %></td>
+    <td><%= legal_document.do_ot_resuscitate %></td>
+    <td><%= legal_document.health_care_directive %></td>
+    <td><%= legal_document.power_of_attorney %></td>
+    <td><%= legal_document.will %></td>
+    <td><%= legal_document.trust %></td>
+    <td><%= legal_document.wishes %></td>
+    <td><%= legal_document.letter_of_authorization %></td>
+    <td><%= legal_document.pension_papers %></td>
+    <td><%= legal_document.location_of_original %></td>
     <td><%= link_to 'Show', legal_document %></td>
-    <td><%= link_to 'Edit', edit_legal_doucument_path(legal_document) %></td>
+    <td><%= link_to 'Edit', edit_legal_document_path(legal_document) %></td>
     <td><%= link_to 'Destroy', legal_document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
@@ -39,4 +36,4 @@
 
 <br />
 
-<%= link_to 'New Legal doucument', new_legal_doucument_path %>
+<%= link_to 'New Legal document', new_legal_document_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Organization name:</b>
+  <%= @funeral_arrangement.organization_name %>
+</p>
+
+<p>
+  <b>Provider address:</b>
+  <%= @funeral_arrangement.provider_address %>
+</p>
+
+<p>
+  <b>Provider email:</b>
+  <%= @funeral_arrangement.provider_email %>
+</p>
+
+<p>
+  <b>Provider phone number:</b>
+  <%= @funeral_arrangement.provider_phone_number %>
+</p>
+
+<p>
+  <b>Contact name:</b>
+  <%= @funeral_arrangement.contact_name %>
+</p>
+
+<p>
+  <b>Arrangements or celebration of life details:</b>
+  <%= @funeral_arrangement.arrangements_or_celebration_of_life_details %>
+</p>
+
+
+<%= link_to 'Edit', edit_funeral_arrangement_path(@funeral_arrangement) %> |
+<%= link_to 'Back', funeral_arrangements_path %>

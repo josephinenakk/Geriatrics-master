@@ -1,0 +1,33 @@
+<h1>Listing funeral_arrangements</h1>
+
+<table>
+  <tr>
+    <th>Organization name</th>
+    <th>Provider address</th>
+    <th>Provider email</th>
+    <th>Provider phone number</th>
+    <th>Contact name</th>
+    <th>Arrangements or celebration of life details</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @funeral_arrangements.each do |funeral_arrangement| %>
+  <tr>
+    <td><%= funeral_arrangement.organization_name %></td>
+    <td><%= funeral_arrangement.provider_address %></td>
+    <td><%= funeral_arrangement.provider_email %></td>
+    <td><%= funeral_arrangement.provider_phone_number %></td>
+    <td><%= funeral_arrangement.contact_name %></td>
+    <td><%= funeral_arrangement.arrangements_or_celebration_of_life_details %></td>
+    <td><%= link_to 'Show', funeral_arrangement %></td>
+    <td><%= link_to 'Edit', edit_funeral_arrangement_path(funeral_arrangement) %></td>
+    <td><%= link_to 'Destroy', funeral_arrangement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Funeral arrangement', new_funeral_arrangement_path %>

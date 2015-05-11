@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  branch_of_service: MyString
+  active_or_reserve: MyString
+  years_of_service: 1
+  military_contact_name: MyString
+  military_contact_phone: MyString
+  pension_qualified?: MyString
+  pension_or_benefits_phone: MyString
+  _number: MyString
+  notes: MyText
+
+two:
+  branch_of_service: MyString
+  active_or_reserve: MyString
+  years_of_service: 1
+  military_contact_name: MyString
+  military_contact_phone: MyString
+  pension_qualified?: MyString
+  pension_or_benefits_phone: MyString
+  _number: MyString
+  notes: MyText

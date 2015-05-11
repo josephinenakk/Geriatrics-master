@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Branch of service:</b>
+  <%= @military_history.branch_of_service %>
+</p>
+
+<p>
+  <b>Active or reserve:</b>
+  <%= @military_history.active_or_reserve %>
+</p>
+
+<p>
+  <b>Years of service:</b>
+  <%= @military_history.years_of_service %>
+</p>
+
+<p>
+  <b>Military contact name:</b>
+  <%= @military_history.military_contact_name %>
+</p>
+
+<p>
+  <b>Military contact phone:</b>
+  <%= @military_history.military_contact_phone %>
+</p>
+
+<p>
+  <b>Pension qualified?:</b>
+  <%= @military_history.pension_qualified? %>
+</p>
+
+<p>
+  <b>Pension or benefits phone:</b>
+  <%= @military_history.pension_or_benefits_phone %>
+</p>
+
+<p>
+  <b> number:</b>
+  <%= @military_history._number %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @military_history.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_military_history_path(@military_history) %> |
+<%= link_to 'Back', military_histories_path %>

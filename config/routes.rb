@@ -1,4 +1,12 @@
 Geriatrics::Application.routes.draw do
+  resources :funeral_arrangements
+
+  resources :military_histories
+
+  resources :legal_documents
+
+  resources :doctors
+
   devise_for :users
 
   get "providers/attorney_insurance_providers"

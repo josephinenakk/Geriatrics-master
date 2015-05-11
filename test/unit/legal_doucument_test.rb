@@ -5,3 +5,4 @@ class LegalDoucumentTest < ActiveSupport::TestCase
   #   assert true
   # end
 end
+true

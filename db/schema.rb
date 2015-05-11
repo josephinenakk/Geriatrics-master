@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141023201455) do
+ActiveRecord::Schema.define(:version => 20150508150130) do
 
   create_table "banking_financials", :force => true do |t|
     t.integer  "social_Security"
@@ -39,6 +39,13 @@ ActiveRecord::Schema.define(:version => 20141023201455) do
     t.datetime "updated_at",            :null => false
   end
 
+  create_table "doctors", :force => true do |t|
+    t.string   "Name"
+    t.text     "Address"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "insurances", :force => true do |t|
     t.string   "account_Type"
     t.integer  "account_No"
@@ -51,7 +58,7 @@ ActiveRecord::Schema.define(:version => 20141023201455) do
     t.datetime "updated_at",              :null => false
   end
 
-  create_table "legal_documents", :force => true do |t|
+  create_table "legal_doucuments", :force => true do |t|
     t.string   "do_Not_Resuscitate"
     t.string   "healthcare_Directive"
     t.string   "power_of_Attorney"

@@ -1,8 +1,7 @@
-
 <%= form_for(@legal_document) do |f| %>
   <% if @legal_document.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@legal_document.errors.count, "error") %> prohibited this legal_doucument from being saved:</h2>
+      <h2><%= pluralize(@legal_document.errors.count, "error") %> prohibited this legal_document from being saved:</h2>
 
       <ul>
       <% @legal_document.errors.full_messages.each do |msg| %>
@@ -13,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :do_Not_Resuscitate %><br />
-    <%= f.text_field :do_Not_Resuscitate %>
+    <%= f.label :do_ot_resuscitate %><br />
+    <%= f.text_field :do_ot_resuscitate %>
   </div>
   <div class="field">
-    <%= f.label :healthcare_Directive %><br />
-    <%= f.text_field :healthcare_Directive %>
+    <%= f.label :health_care_directive %><br />
+    <%= f.text_field :health_care_directive %>
   </div>
   <div class="field">
-    <%= f.label :power_of_Attorney %><br />
-    <%= f.text_field :power_of_Attorney %>
+    <%= f.label :power_of_attorney %><br />
+    <%= f.text_field :power_of_attorney %>
   </div>
   <div class="field">
     <%= f.label :will %><br />
@@ -34,19 +33,19 @@
   </div>
   <div class="field">
     <%= f.label :wishes %><br />
-    <%= f.text_area :wishes %>
+    <%= f.text_field :wishes %>
   </div>
   <div class="field">
-    <%= f.label :letter_of_Authorization %><br />
-    <%= f.text_area :letter_of_Authorization %>
+    <%= f.label :letter_of_authorization %><br />
+    <%= f.text_area :letter_of_authorization %>
   </div>
   <div class="field">
-    <%= f.label :pension_Papers %><br />
-    <%= f.text_area :pension_Papers %>
+    <%= f.label :pension_papers %><br />
+    <%= f.text_area :pension_papers %>
   </div>
   <div class="field">
-    <%= f.label :location_of_Original %><br />
-    <%= f.text_field :location_of_Original %>
+    <%= f.label :location_of_original %><br />
+    <%= f.text_field :location_of_original %>
   </div>
   <div class="actions">
     <%= f.submit %>

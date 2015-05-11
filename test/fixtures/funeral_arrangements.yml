@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  organization_name: MyString
+  provider_address: MyText
+  provider_email: MyString
+  provider_phone_number: MyString
+  contact_name: MyText
+  arrangements_or_celebration_of_life_details: MyText
+
+two:
+  organization_name: MyString
+  provider_address: MyText
+  provider_email: MyString
+  provider_phone_number: MyString
+  contact_name: MyText
+  arrangements_or_celebration_of_life_details: MyText

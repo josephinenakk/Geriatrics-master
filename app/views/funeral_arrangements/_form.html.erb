@@ -1,0 +1,41 @@
+<%= form_for(@funeral_arrangement) do |f| %>
+  <% if @funeral_arrangement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@funeral_arrangement.errors.count, "error") %> prohibited this funeral_arrangement from being saved:</h2>
+
+      <ul>
+      <% @funeral_arrangement.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :organization_name %><br />
+    <%= f.text_field :organization_name %>
+  </div>
+  <div class="field">
+    <%= f.label :provider_address %><br />
+    <%= f.text_area :provider_address %>
+  </div>
+  <div class="field">
+    <%= f.label :provider_email %><br />
+    <%= f.text_field :provider_email %>
+  </div>
+  <div class="field">
+    <%= f.label :provider_phone_number %><br />
+    <%= f.text_field :provider_phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_name %><br />
+    <%= f.text_area :contact_name %>
+  </div>
+  <div class="field">
+    <%= f.label :arrangements_or_celebration_of_life_details %><br />
+    <%= f.text_area :arrangements_or_celebration_of_life_details %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

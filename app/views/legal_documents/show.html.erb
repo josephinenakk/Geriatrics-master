@@ -1,21 +1,18 @@
-<nav id="top_menu">
-<%=render :partial=>'shared/navigation'%>
-  </nav>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Do not resuscitate:</b>
-  <%= @legal_document.do_Not_Resuscitate %>
+  <b>Do ot resuscitate:</b>
+  <%= @legal_document.do_ot_resuscitate %>
 </p>
 
 <p>
-  <b>Healthcare directive:</b>
-  <%= @legal_document.healthcare_Directive %>
+  <b>Health care directive:</b>
+  <%= @legal_document.health_care_directive %>
 </p>
 
 <p>
   <b>Power of attorney:</b>
-  <%= @legal_document.power_of_Attorney %>
+  <%= @legal_document.power_of_attorney %>
 </p>
 
 <p>
@@ -35,19 +32,19 @@
 
 <p>
   <b>Letter of authorization:</b>
-  <%= @legal_document.letter_of_Authorization %>
+  <%= @legal_document.letter_of_authorization %>
 </p>
 
 <p>
   <b>Pension papers:</b>
-  <%= @legal_document.pension_Papers %>
+  <%= @legal_document.pension_papers %>
 </p>
 
 <p>
   <b>Location of original:</b>
-  <%= @legal_document.location_of_Original %>
+  <%= @legal_document.location_of_original %>
 </p>
 
 
-<%= link_to 'Edit', edit_legal_doucument_path(@legal_document) %> |
-<%= link_to 'Back', legal_doucuments_path %>
+<%= link_to 'Edit', edit_legal_document_path(@legal_document) %> |
+<%= link_to 'Back', legal_documents_path %>
